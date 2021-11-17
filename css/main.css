@@ -388,3 +388,82 @@ section.me ul.in li p::before {
     padding: 10px 0;
     cursor: pointer;
 }
+
+/* section sns style */
+section.sns {
+    margin-bottom: 60px;
+}
+
+section.sns ul {
+    width: 74%;
+    margin: 50px auto;
+}
+section.sns ul li {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+section.sns ul li:last-child {
+    margin-right: 0;
+}
+section.sns ul li .img-box {
+    width: 100%;
+    height: 251px;
+    overflow: hidden;
+    position: relative;
+}
+section.sns ul li .img-box::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: rgba(255,131,66, 0.85);
+    position: absolute;
+    transition: 0.5s;
+}
+section.sns ul li a:hover .img-box::before {
+    width: 100%;
+}
+
+section.sns ul li .img-box::after {
+    content: 'BLOG';
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    padding: 5px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.7s;
+}
+section.sns ul li a:hover .img-box::after {
+    opacity: 1;
+}
+
+section.sns ul li .img-box img {
+    width: 100%;
+}
+section.sns ul li .bottom {
+    padding: 20px 0 20px 30px;
+    box-sizing: border-box;
+}
+section.sns ul li .bottom p {
+    font-size: 18px;
+}
+section.sns ul li .bottom p.color {
+    color: #ff8342;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+section.sns ul li .bottom p.time {
+    color: #999;
+    font-size: 14px;
+    margin-top: 30px;
+}
+section.sns ul li .bottom p.time i {
+    margin-right: 5px;
+    font-size: 0.9em;
+}
